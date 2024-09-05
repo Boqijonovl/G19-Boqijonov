@@ -1,0 +1,127 @@
+.footer {
+    background-color: #505050;
+    padding: 69px 100px;
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer_left {
+            display: flex;
+
+            .footer_link-wrapper {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 50px;
+                    height: 3px;
+                    position: absolute;
+                    top: -15px;
+                    background-color: #FFFFFF;
+                }
+
+                .footer_link {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18.2px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+
+                    b {
+                        font-weight: 700;
+                    }
+
+                    a {
+                        color: #ffffff;
+                        transition: .2s all linear;
+
+                        &:hover {
+                            opacity: 0.4;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer_right {
+            align-self: flex-end;
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+                margin-bottom: 25px;
+                cursor: pointer;
+            }
+
+            .socials {
+                text-align: end;
+
+                img {
+                    margin-left: 12px;
+                    cursor: pointer;
+                }
+
+                img:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 811px) {
+    .footer {
+        padding: 39px 30px;
+
+        .footer_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            .footer_right {
+                align-self: center !important;
+
+                .socials {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        .footer_wrapper {
+            .footer_left {
+                display: block;
+
+                .footer_link-wrapper {
+                    text-align: center;
+
+                    &::after {
+                        content: '';
+                        width: 50px;
+                        height: 3px;
+                        position: absolute;
+                        top: -15px;
+                        left: 50% !important;
+                        background-color: #FFFFFF;
+                    }
+                }
+
+                .second {
+                    display: none;
+                }
+            }
+
+            .footer_right {
+                .logo {
+                    display: none;
+                }
+            }
+        }
+    }
+}

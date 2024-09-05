@@ -1,35 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.popular_section {
+    background-color: #ECECEC;
+    padding-top: 58px;
+    padding-bottom: 58px;
+
+    .popular_title {
+        color: #505050;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        position: relative;
+    }
+
+    .popular_card {
+        box-shadow: 5px 10px 10px rgb(214, 208, 208);
+
+        .popular_img-wrapper {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 252px;
+            margin-bottom: 20px;
+        }
+
+        .popular_img-wrapper-1 {
+            background-image: url('../../../../assets/img/Rectangle\ 9\ s.png');
+        }
+
+        .popular_img-wrapper-2 {
+            background-image: url('../../../../assets/img/2.png');
+        }
+
+        .popular_img-wrapper-3 {
+            background-image: url('../../../../assets/img/3.png');
+        }
+
+        .popular_img-wrapper-4 {
+            background-image: url('../../../../assets/img/4.png');
+        }
+    }
 }
 
-ul,
-li {
-    list-style-type: none;
+.popular_card-header {
+    display: flex !important;
+    justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    color: none;
+.card_header-left-title {
+    color: #252525 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 23.4px !important;
 }
 
-input,
-output {
-    border: none;
-    background: none;
-    outline: none;
+.card_header-left-desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    color: #767676;
+    margin-bottom: 20px;
 }
 
-input,
-output:focus {
-    outline: none;
+.popular_card-footer {
+
+    .card_footer-info {
+        .popular_card-info {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #505050;
+            border: 2px solid #b6b1b1;
+            padding: 2px 6px;
+            border-radius: 100px;
+            width: 150px;
+            text-align: center;
+            margin-bottom: 0 !important;
+        }
+    }
 }
 
-/* ====================================================== main */
 
-.container {
-    max-width: 1264px;
-    margin: 0 auto;
-    padding: 0 20px;
+@media screen and (max-width: 586px) {
+    .popular_title {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        line-height: 31.2px !important;
+
+    }
 }

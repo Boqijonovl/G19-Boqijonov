@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+input,
+output {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input,
+output:focus {
+  outline: none;
+}
+
+/* ====================================================== main */
+.container {
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav_hero {
+  background-image: url("../../../assets/img/unsplash_gioH4gHo0-g.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 754px;
+}
+
+.nav {
+  padding-top: 56px;
+}
+.nav .nav_img img {
+  width: 100%;
+  min-width: 155px;
+}
+.nav ul a {
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  text-align: center;
+}
+.nav ul a:hover {
+  opacity: 0.6;
+}
+.nav .hero h1 {
+  margin-top: 176px;
+  font-family: "Work Sans";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+}
+
+.hero_text {
+  margin-top: -140px;
+  background-image: url("../../../assets/img/photo-1505318671783-f03bb223d3f7.avif");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 280px;
+  min-height: 168px !important;
+  opacity: 0, 31;
+  background-blend-mode: darken;
+  background-color: #AB0433;
+}
+.hero_text h1 {
+  font-family: "Work Sans";
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 55.2px;
+  text-align: center;
+}
+.hero_text h3 {
+  font-family: "Work Sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35.76px;
+  text-align: center;
+}
+.hero_text button {
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 32px;
+  background-color: #FF753A;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  text-align: center;
+}
+.hero_text button:hover {
+  background-color: #ff4f04;
+}
+
+.praduct {
+  padding-top: 88px;
+}
+.praduct h1 {
+  margin-bottom: 8px;
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+.praduct h5 {
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  text-align: left;
+}
+.praduct h5 span {
+  margin-left: 60%;
+}
+.praduct p {
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: left;
+}
+
+.popular {
+  background-color: #ECECEC;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.footer {
+  background-color: #505050;
+}
+.footer li {
+  font-size: 16px;
+}
+.footer li a {
+  margin-top: 8px;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  opacity: 0.6;
+}
+.footer li a:hover {
+  opacity: 1;
+}
+.footer .logo {
+  width: 100%;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 32px !important;
+    font-weight: 500;
+    line-height: 38.4px;
+  }
+  .hero_text h1 {
+    font-size: 21px !important;
+  }
+  .hero_text h3 {
+    font-size: 10px !important;
+  }
+  .praduct {
+    padding-top: 48px !important;
+  }
+  .praduct .popular {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .praduct h1 {
+    font-size: 24px !important;
+  }
+  .praduct h5 {
+    font-size: 18px !important;
+  }
+  .praduct p {
+    font-size: 16px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
